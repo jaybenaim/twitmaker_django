@@ -4,7 +4,7 @@
     {% for tweet in tweets %}
       <li class='tweet'>
         <time> {{ tweet.created_at }} </time>
-        <p> {{ tweet.message }} </p>
+        <p> {{ tweet.message }} <a id="delete" href="/">Delete</a> </p>
       </li>
     {% endfor %}
   </ol>
